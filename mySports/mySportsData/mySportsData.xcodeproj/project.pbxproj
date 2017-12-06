@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		235BB8711FD866E300CDA5E7 /* mySportsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 235BB86F1FD866E300CDA5E7 /* mySportsData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235BB87D1FD8689600CDA5E7 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BB87C1FD8689600CDA5E7 /* Activity.swift */; };
+		235BB87F1FD868AC00CDA5E7 /* ActivityRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BB87E1FD868AC00CDA5E7 /* ActivityRecord.swift */; };
+		235BB8821FD868C500CDA5E7 /* ActivityRecordDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BB8811FD868C500CDA5E7 /* ActivityRecordDetail.swift */; };
+		235BB8841FD86A0A00CDA5E7 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BB8831FD86A0A00CDA5E7 /* DataGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		235BB86C1FD866E300CDA5E7 /* mySportsData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mySportsData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		235BB86F1FD866E300CDA5E7 /* mySportsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mySportsData.h; sourceTree = "<group>"; };
 		235BB8701FD866E300CDA5E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		235BB87C1FD8689600CDA5E7 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		235BB87E1FD868AC00CDA5E7 /* ActivityRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRecord.swift; sourceTree = "<group>"; };
+		235BB8811FD868C500CDA5E7 /* ActivityRecordDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRecordDetail.swift; sourceTree = "<group>"; };
+		235BB8831FD86A0A00CDA5E7 /* DataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				235BB86F1FD866E300CDA5E7 /* mySportsData.h */,
 				235BB8701FD866E300CDA5E7 /* Info.plist */,
+				235BB87C1FD8689600CDA5E7 /* Activity.swift */,
+				235BB87E1FD868AC00CDA5E7 /* ActivityRecord.swift */,
+				235BB8811FD868C500CDA5E7 /* ActivityRecordDetail.swift */,
+				235BB8831FD86A0A00CDA5E7 /* DataGenerator.swift */,
 			);
 			path = mySportsData;
 			sourceTree = "<group>";
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					235BB86B1FD866E300CDA5E7 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235BB87D1FD8689600CDA5E7 /* Activity.swift in Sources */,
+				235BB8821FD868C500CDA5E7 /* ActivityRecordDetail.swift in Sources */,
+				235BB87F1FD868AC00CDA5E7 /* ActivityRecord.swift in Sources */,
+				235BB8841FD86A0A00CDA5E7 /* DataGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +270,7 @@
 		235BB8751FD866E300CDA5E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -267,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.philipealves.mySportsData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -275,6 +294,7 @@
 		235BB8761FD866E300CDA5E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
