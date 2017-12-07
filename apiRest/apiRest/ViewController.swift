@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  mySports
+//  apiRest
 //
 //  Created by ALOC SP05816 on 06/12/2017.
 //  Copyright © 2017 Philipe Alves de Oliveira e SIlva. All rights reserved.
